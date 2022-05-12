@@ -2,5 +2,6 @@
 //ROUTE PAR DEFAUT
 //PATTERN : /
 //ctrl : postController
-//action : index
-?>
+//action : 
+include '../app/controllers/postController.php';
+indexAction($connexion);
