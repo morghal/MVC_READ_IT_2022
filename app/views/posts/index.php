@@ -14,9 +14,9 @@
                           <span><?php echo getFormatedDate($post['created_at'],'m/y'); ?></span>
                     		</div>
                     	</div>
-                    	<h3 class="heading mb-3"><a href="#"><?php echo $post['title']; ?></a></h3>
+                    	<h3 class="heading mb-3"><a href="?postID=<?php echo $post['id']?>"><?php echo $post['title']; ?></a></h3>
                       <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                      <p><a href="article.html" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p>
+                      <p><a href="?postID=<?php echo $post['id']?>" class="btn-custom"><span class="ion-ios-arrow-round-forward mr-3"></span>Read more</a></p>
                     </div>
                   </div>
                 </div>
