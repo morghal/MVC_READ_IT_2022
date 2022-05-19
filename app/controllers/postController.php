@@ -1,7 +1,10 @@
 <?php
 function showAction(PDO $connexion, int $id) {
     include '../app/modeles/postModel.php';
-    $post = findOneById($connexion, $_GET['postID']);
+    $post = findOneById($connexion, $id);
+    
+    include '../app/modeles/authorModel.php';
+    $author = findAuthById($connexion, $post['author_id']);
 
     global $content;
     ob_start();
