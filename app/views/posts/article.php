@@ -14,4 +14,9 @@
 
             <!--AUTHOR INFO-->
             <?php include '../app/views/authors/show.php'; ?>
+
+            <!--COMMENTS -->
+            <?php include '../app/controllers/commentsController.php'; 
+            commentAction($connexion, $post['id']);
+            ?>
           </div>
