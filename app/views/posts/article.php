@@ -19,4 +19,7 @@
             <?php include '../app/controllers/commentsController.php'; 
             commentAction($connexion, $post['id']);
             ?>
+
+              <!--COMMENT FORM-->
+              <?php include '../app/views/comments/_commentForm.php'; ?>
           </div>
